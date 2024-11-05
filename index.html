@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocalizador Google Maps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Geolocalizador - Fanfas</h1>
+    <div id="dados">
+    <label for="address"><b>Digite a cidade e o endereço:</b></label><br>
+        <input type="text" id="address" placeholder="Ex: Pindamonhangaba SP">
+        <button onclick="geolocate()">Buscar</button>
+    </div>
+    <div id="map"></div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmWmhjL1rJYhK9CVjb56wDPOem8aDBN3M&callback=initMap" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html>
